@@ -140,13 +140,22 @@ li > a {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  gap: ;
+  gap: 30px;
 }
 
 .blog-img {
   object-fit: cover;
-  width: 326px;
+  width: 360px;
   height: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.img-title {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 25px;
+  text-align: center;
 }
 
 footer > p {
