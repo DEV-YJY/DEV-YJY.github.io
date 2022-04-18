@@ -1,0 +1,163 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  color: #F5F6F7;
+}
+
+body {
+  background-color: #17171F;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 22px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #17171F;
+  z-index: 2;
+  animation: slide-top 1.5s ease-out;
+}
+
+@keyframes slide-top {
+  from {
+      top: -100px;
+  }
+  to {
+      top: 0;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li > a {
+  padding: 10px 25px;
+}
+
+.nav-bar li:hover {
+  background-color: rgb(163 163 255);
+  border-radius: 25px;
+}
+
+.nav-bar .home:hover a,
+.nav-bar .links:hover a,
+.nav-bar .about-me:hover a {
+  color: black;
+}
+
+.main-img {
+  position: absolute;
+  height: auto;
+  width: 400px;
+  object-fit: contain;
+  top: 20%;
+  right: 25%;
+  opacity: 60%;
+  border-radius: 20px;
+  z-index: -1;
+  animation: slide-right 1.5s ease-out;
+}
+
+@keyframes slide-right {
+  from {
+      right: 5%;
+      opacity: 0%;
+  }
+  to {
+      right: 25%;
+      opacity: 60%;
+  }
+}
+
+.main-msg {
+  position: absolute;
+  max-width: 50%;
+  line-height: 1.2em;
+  animation: slide-left 1.5s ease-out;
+  top: 25%;
+  left: 25%;
+}
+
+@keyframes slide-left {
+  from {
+      left: -100px;
+      opacity: 0%
+  }
+  to {
+      opacity: 100%
+  }
+}
+
+.main-page {
+  margin-top: 15%;
+  margin-bottom: 55%;
+}
+
+.divider {
+  border: solid 4px #3F3FFF;
+  border-radius: 15px;
+  width: 40px;
+}
+
+#blog-links > h3 {
+  margin-top: 0;
+}
+
+#blog-links {
+  margin-top: 50px;
+  margin-bottom: 10%;
+}
+
+#about > h3 {
+  margin-top: 0;
+}
+
+
+#blog-links, #about {
+  margin: 5% auto;
+  width: 75%;
+}
+
+.img-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: ;
+}
+
+.blog-img {
+  object-fit: cover;
+  width: 326px;
+  height: auto;
+}
+
+footer > p {
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  font-size: 15px;
+}
+
+.line {
+  border-bottom: solid 3px black;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
