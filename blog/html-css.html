@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Class vs ID</title>
+</head>
+<style>
+
+* {
+  font-family: 'Poppins', sans-serif;
+  color: #F5F6F7;
+}
+
+body {
+  background-color: #17171F;
+  margin: 0;
+  padding: 0;
+}
+
+header, main {
+  margin: 30px 30px 0;
+}
+
+button {
+  background-color: #17171F;
+  border-radius: 25px;
+}
+
+button > a {
+  background-color: #17171F;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgb(163 163 255);
+}
+
+button:hover a {
+  background-color: rgb(163 163 255);
+  color: black;
+}
+
+footer > p {
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  font-size: 15px;
+}
+
+.line {
+  border-bottom: solid 3px black;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+</style>
+
+<body>
+    
+    <header>
+        <h1>Class and IDs in CSS</h1>
+    </header>
+    
+    <main>
+        <p>CSS stands for Cascading Style Sheets. CSS is responsible for beautifying the websites. Without CSS you will find internet surfing extremely boring and difficult.</p>
+        <br>
+        <p>In CSS, styles are applied by targeting a specific element or range of elements with different classes and IDs. Then, targeted elements get styled!</p>
+        <p>As the name suggests, CSS classes and ID pose some differences that you need to be careful when utilising them.
+          The difference is that the CSS class applies a style to multiple elements whereas ID can only apply styles to one unique element. This means that once attached, the ID will not be able to be reused within the same webpage.</p>
+        <p>IDs also have a higher specificity than classes meaning, styles that belong to an ID can overwrite the ones that belong to classes.</p>
+        <p>There are some more differences and details that can be overviewed to discuss the practicability of using CSS classes and IDs but they will not be covered in this post.</p>
+        <br>
+        <p>I personally think styles should be easy to override and extended to make CSS pleasant to work with and maintainable. Also, if I was working with my co-worker on a project, I would prefer to work only with the class attribute to define styles rather than seeing class and ID in a combination.</p>
+        <p>Thus, based on what we have briefly covered.. although there are no rules that stop you from using ID over a class, I believe it is a better practice to keep the usage of IDs to the minimum and only apply it where necessary. By doing so it will be able to minimise any potential confusion :)</p>  
+    <button><a href="../index.html">Home</a></button>
+    </main>
+
+    <footer>
+        <div class="line"></div>
+        <p>
+            Copyright © 2022 Jay You. All Rights Reserved
+        </p>
+    </footer> <!-- footer -->
+    
+</body>
+</html>
