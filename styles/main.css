@@ -1,16 +1,21 @@
 * {
   font-family: 'Poppins', sans-serif;
-  color: #F5F6F7;
+  /* color: #F5F6F7; */
+  color: #E4E6EB;
 }
 
 body {
-  background-color: #17171F;
+  /* background-color: #17171F; */
+  background-color: #18191A;
   margin: 0;
   padding: 0;
 }
 
 html, body {
   scroll-behavior: smooth;
+}
+header, main {
+  margin: 30px 30px 0;
 }
 
 .top-bar {
@@ -156,6 +161,29 @@ li > a {
   padding: 0;
   font-size: 25px;
   text-align: center;
+}
+
+button {
+  background-color: #17171F;
+  border-radius: 25px;
+}
+
+button > a {
+  background-color: #17171F;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgb(163 163 255);
+}
+
+button:hover a {
+  background-color: rgb(163 163 255);
+  color: black;
+}
+
+.my-intro {
+  font-size: 23px;
 }
 
 footer > p {
