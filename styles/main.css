@@ -1,11 +1,9 @@
 * {
   font-family: 'Poppins', sans-serif;
-  /* color: #F5F6F7; */
   color: #E4E6EB;
 }
 
 body {
-  /* background-color: #17171F; */
   background-color: #18191A;
   margin: 0;
   padding: 0;
@@ -173,13 +171,20 @@ button > a {
   text-decoration: none;
 }
 
-button:hover {
-  background-color: rgb(163 163 255);
-}
-
-button:hover a {
+button:hover a,
+button:hover,
+button:hover .fa-arrow-left-long {
   background-color: rgb(163 163 255);
   color: black;
+  cursor: pointer;
+}
+
+.fa-arrow-left-long {
+  /* padding: 5px; */
+}
+
+#arrow {
+  font-size: 50px;
 }
 
 .my-intro {
