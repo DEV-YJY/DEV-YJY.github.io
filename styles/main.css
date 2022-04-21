@@ -200,22 +200,99 @@ footer > p {
   margin-top: 5%;
 }
 
-@media only screen and (max-width: 1024px) {
-  
-}
-
 @media only screen and (max-width: 480px) {
-  .my-title {
-    text-align: center;
+
+  header {
+    padding: 0 auto;
   }
-  
+
+  .title {
+    font-size: 15px;
+  }
+
   .top-bar {
     flex-wrap: wrap;
-    
+    margin-bottom: 40px;
   }
 
-  .nav-bar > li {
+  .main-msg {
+    position: absolute;
+    font-size: 25px;
+    left: 155px;
+    top: 120px;
+  }
+
+  .main-page {
+    margin-bottom: 400px;
+  }
+
+  .main-img {
+    display: block;
+    left: 15px;
+    width: auto;
+    height: 250px;
+    animation: slide-right-mb 1.5s ease-out;
+  }
+
+  @keyframes slide-right-mb {
+    from {
+        left: -180px;
+        opacity: 0%;
+    }
+    to {
+        opacity: 60%;
+    }
+  }
+
+  .divider {
+    width: 30px;
+  }
+
+  #blog-links > h3,
+  #about > h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .img-container, .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 0 auto;
-    justify-content: space-between;
+  }
+
+  .blog-img {
+    width: 220px;
+    height: auto;
+  }
+
+  #about {
+    margin: 15px auto 0;
+  }
+
+  .my-intro {
+    font-size: 20px;
+  }
+
+  .foot {
+    font-size: 10px;
+  }
+
+  .blog-header {
+    font-size: 35px;
+  }
+
+  .blog-content > h3 {
+    font-size: 30px;
+  }
+
+  .blog-content > h4 {
+    font-size: 25px;
+  }
+
+  .blog-content > p {
+    font-size: 20px;
   }
 }
+
