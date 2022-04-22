@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/43c7125603.js" crossorigin="anonymous"></script>    
+        <title>Javascript-DOM</title>
+    </head>
+    <body>
+      
+        <header>
+            <h1 class="blog-header">Javascript-DOM</h1>
+        </header>
+
+        <main>
+            <div class="blog-content">
+                <h3>An analogy to describe the differences between HTML and CSS</h3>
+                <p>
+                  - To make it easy to understand I would describe HTML as a sketch of an animation movie that is drawn on a white paper with a black pen or pencil. It is just a plain drawing without any colour.
+                  <br>
+                  - CSS is then can be described as a tool. For example, paint, brush and etc. are used to provide colour and make this sketch more lively.                
+                  <br>
+                </p>
+                <br>
+                <h3>
+                  Explain control flow and loops using an example process from everyday life, for example, 'waking up' or 'brushing your teeth. (But not those).              
+                </h3>
+                <p>
+                  - Control flow in programming dictates the order in which the codes are executed under different conditions. It starts from the top (the first line) towards the bottom (the last line) unless it encounters any statement that alters the control flow – e.g. conditionals, functions and loops. We will only look at loops this time.
+                  <br>
+                  - Loop control flow (while, do...while, and for loops) allows the code to be executed repeatedly based on a particular Boolean condition. Below is the simplified diagram illustrating how to loop control flow works.                
+                </p>
+                <div class="blog-ref-img-container">
+                    <img class="blog-ref-img" src="../styles/ref-img/loop.jpg" alt="">
+                    <p class="ref">https://www.edureka.co/blog/javascript-loops/</p>
+                </div>
+                <p>
+                  My simple everyday life example for this would be:
+                  Wake up in the morning → (if still feeling tired) go back to bed for another 30 min → wake up again → (if still feeling tired) back to bed for another 30 min → repeat it until you don’t feel tired anymore! 
+                  if not feeling tired anymore after waking up → get up and wash yourself → start your day!
+                </p>
+                <br>
+                <h3>
+                  Describe what the DOM is and an example of how you might interact with it.
+                </h3>
+                <p>
+                  - The DOM stands for Document Object Model. <br>
+                  - It dictates what content to be displayed on a page and how each element of the content relates to the other elements.<br>
+                  - In our case, the DOM can be manipulated through Javascript.<br>
+                  - For example the below code assigns &lt;p&gt; tags from HTML file as a variable.<br>
+                  <pre>
+                      <code class="code-example">
+                          let paragraph = document.getElementByTags('p')
+                      </code>
+                  </pre>
+                  - This allows us to interact with the element in the HTML file.
+                  <pre>
+                    <code class="code-example">
+                      paragraph.innerHTML = “I am a paragraph”
+                    </code>
+                  </pre>
+                  <!-- where I stopped!-->
+                  The above code changes the content between all the &lt;p&gt; tags in the HTML file to “I am a paragraph”                </p>
+                <h3>
+                  Explain the difference between accessing data from arrays and objects.
+                </h3>
+                <p>
+
+                </p>
+                <h3>
+                  Explain what functions are and why they are helpful
+                </h3>
+                <p>
+                  - Functions in Javascript are reusable blocks of code.
+                  <br>
+                  - The benefit of using functions comes from their reusable nature. That is, the function can be used repeatedly without having to write the same code again.
+                  <br>
+                  - The below diagrams show an example of how function helps developers to keep their code easy to work with without any repetition!
+                <div class="blog-ref-img-container">
+                    <img class="blog-ref-img" src="../styles/ref-img/function.png" alt="">
+                    <p class="ref">https://www.edureka.co/blog/javascript-loops/</p>
+                </div>
+
+                </p>
+                  <a href="../index.html">
+                  <button>
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                   Back
+                  </button>
+                </a>
+            </div>
+        </main>
+      
+        <footer>
+            <div class="line"></div>
+            <p class="foot">
+                Copyright © 2022 Jay You. All Rights Reserved
+            </p>
+        </footer> <!-- footer -->
+
+    </body>
+</html>
