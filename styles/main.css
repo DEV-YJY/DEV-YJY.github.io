@@ -154,6 +154,15 @@ li > a {
   padding-bottom: 0;
 }
 
+.blog-content > h3 {
+  font-size: 30px;
+  color: rgb(163 163 255);
+}
+
+.blog-content > h4 {
+  text-decoration: underline;
+}
+
 .img-title {
   margin: 0 auto;
   padding: 0;
@@ -281,10 +290,6 @@ footer > p {
 
   .blog-header {
     font-size: 35px;
-  }
-
-  .blog-content > h3 {
-    font-size: 30px;
   }
 
   .blog-content > h4 {
