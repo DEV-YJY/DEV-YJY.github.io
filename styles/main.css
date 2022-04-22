@@ -30,6 +30,11 @@ html, body {
   animation: slide-top 1.5s ease-out;
 }
 
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
 @keyframes slide-top {
   from {
       top: -100px;
