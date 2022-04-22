@@ -152,6 +152,19 @@ li > a {
   height: auto;
   margin-bottom: 0;
   padding-bottom: 0;
+  border-radius: 15px;
+}
+
+.blog-img:hover {
+  background:blue;
+  opacity:0.4;
+  filter: alpha(opacity=30);
+}
+
+.link-container:hover .blog-img {
+  background:blue;
+  opacity:0.4;
+  filter: alpha(opacity=30);
 }
 
 .blog-content > h3 {
@@ -167,6 +180,32 @@ li > a {
   margin: 0 auto;
   padding: 0;
   font-size: 25px;
+  text-align: center;
+}
+
+.blog-ref-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+pre {
+  background-color: #343434;
+  border: 1px solid #999;
+  display: block;
+  margin:0;
+}
+
+.code-example {
+  text-align: center;
+  width: 100%;
+}
+
+.ref {
+  font-size: 15px;
   text-align: center;
 }
 
