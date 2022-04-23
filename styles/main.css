@@ -21,7 +21,7 @@ html, body {
   justify-content: space-around;
   align-items: center;
   /* margin: 0 auto; */
-  font-size: 22px;
+  font-size: 28px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -263,25 +263,36 @@ footer > p {
   margin-top: 5%;
 }
 
+
+/******** moible responsive *********/
 @media only screen and (max-width: 480px) {
 
   header {
     padding: 0 auto;
   }
 
-  .title {
+  .title, .title-container {
     font-size: 15px;
+  }
+
+
+  .title-container {
+    margin: auto;
+  }
+
+  .nav-bar {
+    margin: auto;
   }
 
   .top-bar {
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    justify-content: center;
   }
 
   .main-msg {
     position: absolute;
     font-size: 25px;
-    left: 155px;
+    left: 80px;
     top: 120px;
   }
 
@@ -291,7 +302,8 @@ footer > p {
 
   .main-img {
     display: block;
-    left: 15px;
+    right: 55px;
+    top: 90px;
     width: auto;
     height: 250px;
     animation: slide-right-mb 1.5s ease-out;
@@ -299,7 +311,7 @@ footer > p {
 
   @keyframes slide-right-mb {
     from {
-        left: -180px;
+        right: -180px;
         opacity: 0%;
     }
     to {
@@ -317,7 +329,7 @@ footer > p {
     margin-bottom: 5px;
   }
 
-  .img-container, .link-container {
+  .img-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -325,9 +337,21 @@ footer > p {
     margin: 0 auto;
   }
 
+  .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
   .blog-img {
     width: 220px;
     height: auto;
+  }
+
+  .top-bar {
+    font-size: 20px;
   }
 
   #about {
