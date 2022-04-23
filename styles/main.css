@@ -12,7 +12,7 @@ body {
 html, body {
   scroll-behavior: smooth;
 }
-.blog-content, .blog-header {
+.blog-header {
   margin: 30px 30px 0;
 }
 
@@ -126,11 +126,14 @@ li > a {
   width: 40px;
   animation: slide-bot 1.5s ease-out;
   position: relative;
+  margin:0 7%;
+
 }
 
 #blog-links > h3 {
   margin-top: 0;
   position: relative;
+  margin:0 7%;
 }
 
 #blog-links {
@@ -141,7 +144,7 @@ li > a {
 
 #blog-links, #about {
   margin: 5% auto;
-  width: 75%;
+  width: 100%;
 }
 
 .img-container {
@@ -149,10 +152,17 @@ li > a {
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  justify-items: center;
 }
 
 .link-container {
   animation: slide-bot 1.5s ease-out;
+}
+
+#about > h3 {
+  margin-top: 0;
+  position: relative;
+  margin:0 7%;
 
 }
 
@@ -205,6 +215,10 @@ li > a {
 
 #about > h3 {
   margin-top: 0;
+}
+#about > .my-intro {
+  margin:0 7%;
+  font-size: 30px;
 }
 
 pre {
@@ -321,12 +335,15 @@ footer > p {
 
   .divider {
     width: 30px;
+    position: relative;
+    left: 37%;
   }
 
   #blog-links > h3,
   #about > h3 {
     font-size: 25px;
     margin-bottom: 5px;
+    text-align: center;
   }
 
   .img-container {
