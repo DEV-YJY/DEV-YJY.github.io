@@ -277,7 +277,7 @@ footer > p {
 
 
 /******** moible responsive *********/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 
   header {
     padding: 0 auto;
@@ -286,7 +286,6 @@ footer > p {
   .title, .title-container {
     font-size: 15px;
   }
-
 
   .title-container {
     margin: auto;
@@ -370,11 +369,19 @@ footer > p {
   }
 
   #about {
-    margin: 15px auto 0;
+    margin: 60px auto 0;
   }
 
-  .my-intro {
-    font-size: 20px;
+  #about > .my-intro {
+    font-size: 25px;
+  }
+
+  #blog-links > h3 {
+    font-size: 30px;
+  }
+
+  #about > h3 {
+    font-size: 30px;
   }
 
   .foot {
