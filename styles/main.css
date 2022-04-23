@@ -74,7 +74,7 @@ li > a {
 .main-img {
   position: absolute;
   height: auto;
-  width: 400px;
+  width: 450px;
   object-fit: contain;
   top: 20%;
   right: 25%;
@@ -102,6 +102,7 @@ li > a {
   animation: slide-left 1.5s ease-out;
   top: 25%;
   left: 25%;
+  font-size: 60px;
 }
 
 @keyframes slide-left {
@@ -116,7 +117,7 @@ li > a {
 
 .main-page {
   margin-top: 15%;
-  margin-bottom: 55%;
+  margin-bottom: 50%;
 }
 
 .divider {
@@ -130,16 +131,6 @@ li > a {
 #blog-links > h3 {
   margin-top: 0;
   position: relative;
-  animation: slide-bot 1.5s ease-out;
-}
-
-@keyframes slide-bot {
-  from {
-      bottom: -90px;
-  }
-  to {
-    bottom: 0;
-  }
 }
 
 #blog-links {
@@ -158,6 +149,11 @@ li > a {
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+
+.link-container {
+  animation: slide-bot 1.5s ease-out;
+
 }
 
 .blog-img {
@@ -191,10 +187,11 @@ li > a {
 }
 
 .img-title {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-size: 25px;
   text-align: center;
+  width: 360px;
 }
 
 .blog-ref-img-container {
