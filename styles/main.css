@@ -275,6 +275,9 @@ footer > p {
   margin-top: 5%;
 }
 
+p {
+  line-height: 4vh;
+}
 
 /******** moible responsive *********/
 @media only screen and (max-width: 500px) {
