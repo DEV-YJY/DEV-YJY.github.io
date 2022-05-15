@@ -55,20 +55,29 @@ a {
   text-decoration: none;
 }
 
-li > a {
+li > a,
+.js-link > a {
   padding: 10px 25px;
 }
 
-.nav-bar li:hover {
+.nav-bar li:hover,
+.js-link a:hover {
   background-color: rgb(163 163 255);
   border-radius: 25px;
 }
 
 .nav-bar .home:hover a,
 .nav-bar .links:hover a,
-.nav-bar .about-me:hover a {
+.nav-bar .about-me:hover a,
+.nav-bar .challenges:hover a
+{
   color: black;
 }
+
+.js-link:hover a {
+  color: #18191A
+}
+
 
 .main-img {
   position: absolute;
@@ -128,7 +137,7 @@ li > a {
   margin:0 7%;
 }
 
-#blog-links > h3 {
+#blog-links > h3, #js-challenge > h3, #about > h3 {
   margin-top: 0;
   position: relative;
   margin:0 7%;
@@ -157,13 +166,6 @@ li > a {
 
 .link-container {
   animation: slide-bot 1.5s ease-out;
-}
-
-#about > h3 {
-  margin-top: 0;
-  position: relative;
-  margin:0 7%;
-  font-size: 40px;
 }
 
 .blog-img {
@@ -212,6 +214,18 @@ li > a {
   height: auto;
   margin: 0 auto;
 }
+
+.js-link {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.js-link > a {
+}
+
+
 
 #about > h3 {
   margin-top: 0;
@@ -382,11 +396,7 @@ p {
     font-size: 25px;
   }
 
-  #blog-links > h3 {
-    font-size: 30px;
-  }
-
-  #about > h3 {
+  #blog-links > h3, #js-challenge > h3 #about > h3 {
     font-size: 30px;
   }
 
