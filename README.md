@@ -1,3 +1,3 @@
 # Welcome
 
-### This repo is for saving my work for EDA Course :)
+### EDA course work to be saved in this blog/repo :)
